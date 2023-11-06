@@ -9,9 +9,9 @@ public class Calculator {
         return num1 - num2;
     }
 
-    public float divide(float num1, float num2) {
+    public float divide(float num1, float num2) throws IllegalArgumentException {
         if (num2 == 0) {
-            throw new IllegalArgumentException("Impossibile dividere per zero");
+            throw new IllegalArgumentException("Impossible to divide by zero!");
         }
         return num1 / num2;
     }
